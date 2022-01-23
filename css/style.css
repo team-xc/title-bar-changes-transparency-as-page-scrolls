@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background: #f1f3f5;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.van-info {
+    position: absolute !important;
+    top: 4px !important;
+    width: 16px !important;
+    height: 16px !important;
+    line-height: 16px !important;
+    text-align: center !important;
+    border: none !important;
+    color: #cf0a2c !important;
+    background: white !important;
+    font-weight: 500 !important;
+}
+
+header {
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    box-sizing: border-box;
+    background: url('../images/on_bg.png') no-repeat center center;
+    background-size: 100% 100%;
+    overflow: hidden;
+    z-index: 10;
+}
+
+header .header-left,
+header .header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header .header-left .header-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+
+header .header-left .header-title {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 8px;
+    margin-right: 3px;
+    margin-top: 1px;
+}
+
+header .header-right .header-icon {
+    font-size: 24px;
+    color: white;
+}
+
+header .header-right .header-icon:not(.header-icon :first-child)::before {
+    margin-right: 12px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+main .page-header {
+    position: relative;
+    width: 100%;
+    height: 156px;
+    background: url('../images/head_bg.png') no-repeat center center;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main .page-header .page-header-top {
+    width: 100%;
+    height: 41px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+main .page-header .page-header-top .page-header-top-icon {
+    font-size: 24px;
+    color: white;
+}
+
+main .page-header .page-header-top .page-header-top-icon:not(.page-header-top-icon :first-child)::before {
+    margin-right: 12px;
+}
+
+main .page-header .page-header-middle {
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .page-header .page-header-middle .page-header-middle-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .page-header .page-header-middle .page-header-middle-right {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 8px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+}
+
+main .page-header .page-header-middle .page-header-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+}
+
+main .page-header .page-header-middle .page-header-title {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+main .page-header .page-header-middle .page-header-subtitle {
+    width: 100%;
+    height: 16px;
+    background: #0000001a;
+    border-radius: 8px;
+}
+
+main .page-header .page-header-bottom {
+    width: 100%;
+    flex: 1;
+    padding: 0 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+main .page-header .page-header-bottom .page-header-bottom-card {
+    width: 100%;
+    height: 60px;
+    background: white;
+    border-radius: 16px;
+    position: relative;
+    bottom: -12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #d2d4d6;
+}
+
+main .page-content {
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main .page-content .page-content-card:first-child {
+    margin-top: 26px;
+}
+
+main .page-content .page-content-card {
+    width: 100%;
+    height: 125px;
+    background: white;
+    border-radius: 16px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #d2d4d6;
+}
+
+main .page-footer {
+    width: 100%;
+    height: 60px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #919293;
+    font-size: 12px;
+}

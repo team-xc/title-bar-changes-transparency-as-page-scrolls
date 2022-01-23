@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>标题栏随页面滚动改变透明度</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@2.12/lib/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vant@2.12/lib/vant.min.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+
+        <header :style="{ opacity: headerOpacity }">
+            <div class="header-left">
+                <img class="header-avatar" src="images/avatar.png" />
+                <span class="header-title">前端小池</span>
+            </div>
+            <div class="header-right">
+                <van-icon class="header-icon" name="setting-o" />
+                <van-icon class="header-icon" name="chat-o" badge="8" />
+            </div>
+        </header>
+
+        <main>
+            <div class="page-header">
+                <div class="page-header-top">
+                    <div class="page-header-top-left"></div>
+                    <div class="page-header-top-right">
+                        <van-icon class="page-header-top-icon" name="setting-o" />
+                        <van-icon class="page-header-top-icon" name="chat-o" badge="8" />
+                    </div>
+                </div>
+                <div class="page-header-middle">
+                    <div class="page-header-middle-left">
+                        <img class="page-header-avatar" src="images/avatar.png" />
+                    </div>
+                    <div class="page-header-middle-right">
+                        <div class="page-header-title">前端小池</div>
+                        <div class="page-header-subtitle"></div>
+                    </div>
+                </div>
+                <div class="page-header-bottom">
+                    <div class="page-header-bottom-card">Content</div>
+                </div>
+            </div>
+
+            <div class="page-content">
+                <div class="page-content-card">Content1</div>
+                <div class="page-content-card">Content2</div>
+                <div class="page-content-card">Content3</div>
+                <div class="page-content-card">Content4</div>
+                <div class="page-content-card">Content5</div>
+            </div>
+
+            <div class="page-footer">
+                <span>前端小池</span>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+
+</html>
